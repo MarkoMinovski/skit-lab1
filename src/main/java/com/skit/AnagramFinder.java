@@ -34,7 +34,7 @@ public class AnagramFinder {
         for (int i = 0; i < combinedList.size(); i++) {
             String word1 = combinedList.get(i);
 
-
+            // comment
             for (int j = i + 1; j < combinedList.size(); j++) {
                 String word2 = combinedList.get(j);
 
