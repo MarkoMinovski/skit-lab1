@@ -22,6 +22,17 @@ class AnagramFinderTest {
     }
 
     @Test
+    void testEmptyListsBoth() {
+        List<String> list1 = new ArrayList<>();
+        List<String> list2 = new ArrayList<>();
+
+        List<String> expected = new ArrayList<>();
+        List<String> actual = AnagramFinder.findAnagrams(list1, list2);
+
+        assertEquals(expected, actual);
+    }
+
+    @Test
     void testCaseInsensitivity() {
         List<String> list1 = Arrays.asList("Listen", "Silent");
         List<String> list2 = Arrays.asList("hello", "Enlist");
